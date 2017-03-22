@@ -17,12 +17,59 @@ body{
 	font-weight: 800;
 font-family:  'Montserrat', sans-serif;
 }
+
+
+/*设置边框*/
+
+
 .header-text1{
 	position: absolute;
 	margin-left: 50px;
 	width:300px;
+	height: 200px;
 	top: 100px;
 }
+.header-text1::before{
+	 content:'';
+  border:5px solid #000;
+  border-width: 0 5px;
+  position: absolute;
+  width:100%;
+  height:0;
+  top:50%;
+  left:0;
+  box-sizing: border-box;
+}
+.header-text1::after {
+  content:'';
+  border:5px solid #000;
+  border-width: 5px 0;
+  position: absolute;
+  width:0;
+  height:100%;
+  top:0;
+  left:50%;
+  box-sizing: border-box;
+}
+
+.header:hover .header-text1::before{
+  height:100%;
+  top:0;
+}
+
+.header:hover .header-text1::after {
+  width: 100%;
+  left:0;
+}
+
+.header-text1::before {
+  transition: all .8s;
+}
+
+.header-text1::after {
+  transition: all .8s;
+}
+
 .header-text2{
 	position: absolute;
 	left:1000px;
