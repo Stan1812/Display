@@ -1,4 +1,4 @@
-
+﻿
 body{
 	text-align:center;
 	font-family:Microsoft YaHei lighting,serif,Helvetica,Lucida ;
@@ -141,16 +141,11 @@ font-family:  'Montserrat', sans-serif;
 	height: 250px;
 	background-color:#233333; 
 }
-.footer .text{
+.footer {
 	color: #fff;
 	margin-top:50px;
 }
-.footer button{
-	width: 100px;
-	height: 40px;
-	background:-webkit-linear-gradient(90deg,#dbe5e4,#669f9e);
-	border-radius:5px; 
-}
+
 
 /*练习js部分*/
 #one{width: 300px;
